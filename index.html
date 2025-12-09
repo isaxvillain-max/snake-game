@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snake Game — Isa</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <h1 class="title">Snake Game</h1>
+      <div class="sub">(HTML • CSS • JavaScript)</div>
+    </header>
+
+    <main class="main">
+      <div class="game-wrapper">
+        <div class="canvas-frame">
+          <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+
+        <div class="controls">
+          <div class="score-row">
+            <span class="label">Score:</span>
+            <span id="score">0</span>
+          </div>
+
+          <div class="buttons">
+            <button id="startBtn" class="btn">Start</button>
+            <button id="restartBtn" class="btn green">Restart</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="gameOver" class="overlay hidden">
+        <div class="overlay-card">
+          <h2>Game Over</h2>
+          <p>Your score: <span id="finalScore">0</span></p>
+          <div class="overlay-buttons">
+            <button id="playAgainBtn" class="btn green">Play Again</button>
+            <button id="goHomeBtn" class="btn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small>Use arrow keys (← ↑ → ↓) or W A S D to move.</small>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
